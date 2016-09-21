@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mistyrose">#ffe4e1</color>
+    <color name="blue">#3cb4fe</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="bg_Gray_light">#EEEEEE</color>
+    <color name="window_background">#EBEBEB</color>
+
+    <color name="honeydew">#f0fff0</color>
+    <color name="bg_Gray">#CCCCCC</color>
+    <color name="tv_Black">#000000</color>
+    <color name="deeppink">#ff1493</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="gainsboro">#dcdcdc</color>
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <color name="dimgrey1">#a6e7e7e7</color>
+    <color name="taobao" >#f46a29</color>
+</resources>

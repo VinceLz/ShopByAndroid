@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_menu" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/home_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <shop.xawl.com.shop.Adapter.view.AbSlidingPlayView
+                    android:id="@+id/viewPager_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="让世界看到你"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_middle_text_size" />
+
+                <shop.xawl.com.shop.Adapter.MyGridView
+                    android:id="@+id/my_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:verticalSpacing="5dp"></shop.xawl.com.shop.Adapter.MyGridView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/mistyrose" />
+
+                <shop.xawl.com.shop.Adapter.MyListView
+                    android:id="@+id/home_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:background="@color/deeppink"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="1"
+                                 android:gravity="left|center"
+                                 android:text="营销销售"
+                                 android:textColor="@color/white"
+                                 android:textSize="@dimen/small_middle_text_size" />
+
+                         </LinearLayout>
+
+
+                             <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="220dp"
+                                       android:orientation="horizontal">
+
+                                       <ImageView
+                                           android:layout_width="0dp"
+                                           android:layout_height="match_parent"
+                                           android:layout_weight="1"
+                                           android:scaleType="fitXY"
+                                           android:src="@mipmap/menu_2_1" />
+
+                                       <View
+                                           android:layout_width="1dp"
+                                           android:layout_height="match_parent"
+                                           android:background="@color/bg_Gray" />
+
+                                       <LinearLayout
+                                           android:layout_width="0dp"
+                                           android:layout_height="match_parent"
+                                           android:layout_weight="1"
+                                           android:orientation="vertical">
+
+                                           <ImageView
+                                               android:layout_width="match_parent"
+                                               android:layout_height="0dp"
+                                               android:layout_weight="1.2"
+                                               android:scaleType="fitXY"
+                                               android:src="@mipmap/menu_2_2" />
+
+                                           <View
+                                               android:layout_width="match_parent"
+                                               android:layout_height="1dp"
+                                               android:background="@color/bg_Gray" />
+
+                                           <LinearLayout
+                                               android:layout_width="match_parent"
+                                               android:layout_height="0dp"
+                                               android:layout_weight="1"
+                                               android:orientation="horizontal">
+
+                                               <ImageView
+                                                   android:layout_width="0dp"
+                                                   android:layout_height="match_parent"
+                                                   android:layout_weight="1"
+                                                   android:scaleType="fitXY"
+                                                   android:src="@mipmap/menu_2_3" />
+
+                                               <View
+                                                   android:layout_width="1dp"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/bg_Gray" />
+
+                                               <ImageView
+                                                   android:layout_width="0dp"
+                                                   android:layout_height="match_parent"
+                                                   android:layout_weight="1"
+                                                   android:scaleType="fitXY"
+                                                   android:src="@mipmap/menu_2_4" />
+                                           </LinearLayout>
+                                       </LinearLayout>
+                                   </LinearLayout>
+
+                                   <View
+                                       android:layout_width="match_parent"
+                                       android:layout_height="20dp"
+                                       android:background="@color/mistyrose" />
+
+                </LinearLayout> -->
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

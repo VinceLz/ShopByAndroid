@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dimgrey1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="国内商标注册"
+        android:textSize="14sp" />
+    <shop.xawl.com.shop.Adapter.MyListView
+        android:background="@color/white"
+        android:id="@+id/adpter_right_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </shop.xawl.com.shop.Adapter.MyListView>
+</LinearLayout>

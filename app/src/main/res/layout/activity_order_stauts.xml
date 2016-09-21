@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.OrderStautsActivity">
+
+    <TextView
+        android:id="@+id/order_stauts_Title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/taobao"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="订单详情"
+        android:textColor="@color/tv_Black"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <shop.xawl.com.shop.Adapter.MyListView
+            android:id="@+id/order_stauts_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"></shop.xawl.com.shop.Adapter.MyListView>
+    </ScrollView>
+</LinearLayout>
